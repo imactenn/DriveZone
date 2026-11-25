@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos de Carros</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>JOGOS DE CARROS</h1>
+        <p>Velocidade | Drift | Corrida</p>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bem-vindo aos jogos de carros</h2>
+            <p>
+                Conheça diferentes categorias de jogos de carros,
+                desde corridas de alta velocidade até partidas de drift.
+            </p>
+        </section>
+
+        <section id="categorias">
+            <h2>Categorias de Jogos</h2>
+            <p>Escolha o estilo de jogo que mais combina com você.</p>
+            <div id="listaCategorias" class="grade-categorias"></div>
+            <p id="mensagemCategorias" class="mensagem"></p>
+        </section>
+
+        <section id="jogos">
+            <h2>Experiencia de jogo</h2>
+
+            <article>
+                <h3>Graficos</h3>
+                <p>A qualidade visual pode influenciar a experiência e deixar as corridas mais imersivas.</p>
+            </article>
+
+            <article>
+                <h3>Controles</h3>
+                <p>Os controles intuitivos podem melhorar a experiência do jogador e tornar as partidas mais envolventes.</p>
+            </article>
+
+            <article>
+                <h3>Personalizacao</h3>
+                <p>A personalização do carro pode melhorar a experiência do jogador e tornar as partidas mais envolventes.</p>
+            </article>
+
+            <button id="botao" type="button">Ver Mais</button>
+            <p id="mensagem" class="mensagem"></p>
+        </section>
+
+        <section id="catalogo">
+            <h2>Encontre um jogo de corrida</h2>
+            <p>Pesquise um jogo e veja informações como lançamento, nota e plataformas.</p>
+
+            <form id="formBusca">
+                <div class="campo">
+                    <label for="termoBusca">Nome do jogo:</label>
+                    <input
+                        type="search"
+                        id="termoBusca"
+                        placeholder="Ex: Forza Horizon 5"
+                        required
+                    >
+                </div>
+                <button type="submit" id="botaoBusca">Buscar jogo</button>
+            </form>
+
+            <p id="mensagemBusca" class="mensagem" aria-live="polite"></p>
+            <div id="resultadosApi" class="grade-jogos"></div>
+            <p class="credito-api">
+                Informações e imagens de jogos fornecidas por
+                <a href="https://rawg.io/" target="_blank" rel="noopener noreferrer">RAWG</a>.
+            </p>
+        </section>
+
+        <section id="favoritos">
+            <h2>Meus jogos favoritos</h2>
+            <p>Salve os jogos que você gostaria de jogar. Eles ficam guardados neste navegador.</p>
+            <div id="listaFavoritos" class="grade-jogos"></div>
+        </section>
+
+        <section id="cadastro">
+            <h2>Cadastro de jogos</h2>
+            <p>Cadastre outros jogos de carros que você conhece.</p>
+
+            <form id="formularioJogo">
+                <div class="campo">
+                    <label for="nomeJogo">Nome do jogo:</label>
+                    <input
+                        type="text"
+                        id="nomeJogo"
+                        placeholder="Ex: Need for Speed"
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="categoriaJogo">Categoria:</label>
+                    <input
+                        type="text"
+                        id="categoriaJogo"
+                        placeholder="Ex: Drift"
+                    >
+                </div>
+
+                <button type="submit">Cadastrar jogo</button>
+            </form>
+
+            <p id="mensagemCadastro" class="mensagem" aria-live="polite"></p>
+
+            <h3>Jogos cadastrados</h3>
+            <ul id="listaJogos"></ul>
+        </section>
+    </main>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

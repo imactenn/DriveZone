@@ -1,0 +1,33 @@
+PROJETO: JOGOS DE CARROS — JSON + FETCH() + API
+
+ARQUIVOS
+- index.html: estrutura da página.
+- styles.css: aparência da página.
+- script.js: funções JavaScript, fetch(), pesquisa da API e favoritos.
+- categorias.json: dados locais em formato JSON, carregados com fetch().
+- config.js: local onde você coloca sua chave da API RAWG.
+
+1) CONSEGUIR A CHAVE DA API
+- Crie uma conta em https://rawg.io/apidocs
+- Solicite sua chave de API.
+- Abra o arquivo config.js.
+- Troque COLE_SUA_CHAVE_RAWG_AQUI pela sua chave, mantendo as aspas.
+
+2) COMO EXECUTAR
+Não abra o index.html com duplo clique. O fetch() do arquivo categorias.json precisa que a página seja aberta por um servidor local.
+- No Visual Studio Code, instale/abra a extensão Live Server.
+- Clique com o botão direito no index.html.
+- Escolha "Open with Live Server".
+
+3) O QUE A PÁGINA FAZ
+- Carrega as categorias do arquivo categorias.json usando fetch() e response.json().
+- Pesquisa jogos de corrida na API RAWG usando fetch().
+- Mostra nome, imagem, data de lançamento, avaliação e plataformas dos resultados.
+- Permite guardar e remover favoritos usando localStorage.
+- Mantém o botão "Ver Mais" e o formulário de cadastro manual que já existiam no projeto.
+
+4) IMPORTANTE SOBRE A CHAVE
+A chave colocada em config.js será visível no navegador. Isso é aceitável apenas para um trabalho demonstrativo executado localmente. Não publique a chave em um site público ou em um repositório aberto. Para um site público, a chamada à API deve passar por um servidor/backend que proteja a chave.
+
+5) CRÉDITO DA API
+A página inclui um link para RAWG porque os termos da API pedem atribuição e um link ativo nas páginas que usam seus dados ou imagens. Confira os termos atuais em https://rawg.io/tos_api.

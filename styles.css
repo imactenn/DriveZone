@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #222;
+}
+
+header {
+    background-color: #333333;
+    color: #fff;
+    padding: 22px 16px;
+    text-align: center;
+    border-bottom: 5px solid #e63946;
+}
+
+header h1 {
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+section {
+    background-color: #fff;
+    margin-bottom: 25px;
+    padding: 22px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+h2 {
+    background-color: #f5f5f5;
+    margin-top: 0;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid #e63946;
+}
+
+article h3 {
+    color: #35465d;
+}
+
+button {
+    background-color: #e63946;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 11px 18px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+button:hover {
+    background-color: #db2633;
+}
+
+.campo {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 2px solid #e63946;
+    border-color: transparent;
+}
+
+.grade-categorias,
+.grade-jogos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.grade-categorias article,
+.cartao-jogo {
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    padding: 14px;
+    margin: 0;
+    background-color: #fff;
+}
+
+.cartao-jogo img {
+    display: block;
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.cartao-jogo h3 {
+    margin-bottom: 8px;
+}
+
+.cartao-jogo p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.cartao-jogo a,
+.credito-api a {
+    color: #c92332;
+    font-weight: bold;
+}
+
+.cartao-jogo button {
+    display: block;
+    width: 100%;
+}
+
+.mensagem {
+    line-height: 1.4;
+}
+
+.erro {
+    color: #b91c1c;
+    background-color: #fee2e2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sucesso {
+    color: #166534;
+    background-color: #dcfce7;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.jogo-cadastrado {
+    margin-bottom: 8px;
+    padding: 8px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.credito-api {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #555;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 16px;
+    }
+}
